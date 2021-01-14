@@ -89,16 +89,19 @@ cd /in28Minutes/git/devops-master-class/projects/hello-world/hello-world-python
 docker build -t in28min/hello-world-python:0.0.2.RELEASE . 
 docker run -p 5000:5000 -d in28min/hello-world-python:0.0.2.RELEASE
 docker history e66dc383f7a0
+docker login
 docker push in28min/hello-world-python:0.0.2.RELEASE
 
 cd ../hello-world-nodejs/
 docker build -t in28min/hello-world-nodejs:0.0.2.RELEASE . 
 docker container run -d -p 5000:5000 in28min/hello-world-nodejs:0.0.2.RELEASE
+docker login
 docker push in28min/hello-world-nodejs:0.0.2.RELEASE
 
 cd ../hello-world-java/
 docker build -t in28min/hello-world-java:0.0.2.RELEASE . 
 docker run -d -p 5000:5000 in28min/hello-world-java:0.0.2.RELEASE
+docker login
 docker push in28min/hello-world-java:0.0.2.RELEASE
 
 docker run -d -p 5001:5000 in28min/hello-world-nodejs:0.0.3.RELEASE ping google.com

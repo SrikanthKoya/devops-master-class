@@ -138,6 +138,8 @@ docker-compose ps
 docker-compose top
 docker-compose pause
 docker-compose unpause
+docker-compose stop
+docker-compose kill
 
 ```
 

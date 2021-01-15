@@ -134,7 +134,10 @@ docker system prune -a
 docker-compose config
 docker-compose images
 docker-compose ps
+#top command to findout the top running processes
 docker-compose top
+docker-compose pause
+docker-compose unpause
 
 ```
 

@@ -124,6 +124,8 @@ docker run -d -p 8100:8100 --env CURRENCY_EXCHANGE_SERVICE_HOST=http://currency-
 docker-compose --version
 cd ../../microservices/
 docker-compose up
+# rebuild the containers use --build
+docker-compose up --build
 docker-compose up -d
 docker container ls
 docker network ls
